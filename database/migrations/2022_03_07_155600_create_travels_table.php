@@ -15,8 +15,8 @@ class CreateTravelsTable extends Migration
     {
         Schema::create('travels', function (Blueprint $table) {
             $table->id();
-            $table->char('destinazione', 30);
-            $table->char('nazione_name', 30);
+            $table->string('destinazione', 30);
+            $table->string('nazione_name', 30);
             $table->date('data_viaggio');
             $table->bigInteger('prezzo');
             $table->timestamps();
